@@ -1,7 +1,8 @@
 import './card.css'
 import { FaCirclePlay } from "react-icons/fa6";
 
-export const Card = ({img, title, artist}) => {
+export const Card = ({id, img, title, artist, setPlaySong}) => {
+
   return (
     <div className='card'>
         <img 
@@ -13,7 +14,13 @@ export const Card = ({img, title, artist}) => {
             <p className='artist'>{artist}</p>
             <p className='title'>{title}</p>
         </div>
-        <FaCirclePlay className='play'/>
+        <div 
+            onClick={()=>setPlaySong(id)}
+            className='play'
+        >
+        <FaCirclePlay/>
+        </div>
+    
     </div>
   )
 }

@@ -11,7 +11,7 @@
 
 .play-list {
   width: 400px;
-  height: 85vh;
+  height: 90vh;
   border-radius: 20px;
   background-image: linear-gradient(rgb(21, 21, 83), rgb(11, 11, 42));
   margin: 2px;
@@ -19,6 +19,7 @@
   align-items: center;
   justify-content:space-around;
   flex-direction: column;
+  padding: 10px 0px
 }
 
 
@@ -26,7 +27,7 @@
 
 .display {
   width: 400px;
-  height: 70vh;
+  height: 90vh;
   border-radius: 20px;
   background-image: linear-gradient(rgb(21, 21, 83), rgb(11, 11, 42));
   margin: 2px;
