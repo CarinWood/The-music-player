@@ -1,23 +1,36 @@
 .card {
-    width: 350px;
-    height: 70px;
+    width: 370px;
+    height: 60px;
     border-radius: 10px;
-    background-color: gray;
+    background-color: midnightblue;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
 .cover-image {
-    width: 60px;
+    width: 55px;
     border-radius: 8px;
     margin: 0px 10px;
 }
 
 .artist {
-    
+    font-size: medium;
 }
 
 .title {
+    font-size: small;
+    margin-top: 3px;
+    opacity: 0.6;
+}
 
+.play {
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.play:active {
+    transform: translateY(2px);
 }

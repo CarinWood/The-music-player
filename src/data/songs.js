@@ -1,4 +1,9 @@
 import image1 from '../assets/images/On_Your_Side_album_cover.jpg'
+import image2 from '../assets/images/Save_Room_John_Legend.jpg'
+import image3 from "../assets/images/John_Legend_-_P.D.A._(We_Just_Don't_Care).jpg"
+import image4 from "../assets/images/Zedd_-_Candyman.png"
+import image5 from "../assets/images/Human_-_Rag'n'Bone_Man_Single.png"
+import image6 from "../assets/images/Imagine_Dragons_-_Shots.png"
 
 export const songs = [
 {
@@ -8,38 +13,46 @@ export const songs = [
     img: image1
 
 },
-/* {
+ {
     id: 2,
     title: "Save the room",
-    artist: "John Legend"
+    artist: "John Legend",
+    img: image2
 
 },
 {
     id: 3,
-    titel: "We just don't care",
-    artist: "John Legend"
+    title: "We just don't care",
+    artist: "John Legend",
+    img: image3
 
 },
+
 {
     id: 4,
     title: "Dakota",
-    artist: "A Rocket to the moon"
+    artist: "A Rocket to the moon",
+    img: image1,
 
 },
 {
     id: 5,
     title: "Candyman",
     artist: "Zedd & Aloe Blacc",
+    img: image4,
 
 }, 
+
 {
     id: 6,
     title: "Human",
-    artist: "Rag'n'Bone Man"
-}
+    artist: "Rag'n'Bone Man",
+    img: image5
+},
 {
     id: 7,
     title: "Shots (Broiler Remix)",
-    artist: "Imagine Dragons"
-} */
+    artist: "Imagine Dragons",
+    img: image6
+} 
 ]
