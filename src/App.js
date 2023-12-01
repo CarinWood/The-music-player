@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { Card } from './components/card/Card';
+import { songs } from './data/songs';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+    <div className='play-list'>
+      {songs.map(song => {
+        return <Card key={song.id} img={song.img} title={song.title} artist={song.artist}/>
+      })}
+    </div>
+    <div className='display'>
+
+    </div>
     </div>
   );
 }
