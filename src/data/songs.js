@@ -10,22 +10,24 @@ export const songs = [
     id: 1,
     title: 'Like we used to',
     artist: 'A Rocket to the Moon',
-    img: image1
+    img: image1,
+    active: false,
 
 },
  {
     id: 2,
     title: "Save the room",
     artist: "John Legend",
-    img: image2
+    img: image2,
+    active: false,
 
 },
 {
     id: 3,
     title: "We just don't care",
     artist: "John Legend",
-    img: image3
-
+    img: image3,
+    active: false,
 },
 
 {
@@ -33,6 +35,7 @@ export const songs = [
     title: "Dakota",
     artist: "A Rocket to the moon",
     img: image1,
+    active: false,
 
 },
 {
@@ -40,6 +43,7 @@ export const songs = [
     title: "Candyman",
     artist: "Zedd & Aloe Blacc",
     img: image4,
+    active: false,
 
 }, 
 
@@ -47,12 +51,14 @@ export const songs = [
     id: 6,
     title: "Human",
     artist: "Rag'n'Bone Man",
-    img: image5
+    img: image5,
+    active: false,
 },
 {
     id: 7,
     title: "Shots (Broiler Remix)",
     artist: "Imagine Dragons",
-    img: image6
+    img: image6,
+    active: false,
 } 
 ]

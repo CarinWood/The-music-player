@@ -1,0 +1,15 @@
+.control-buttons {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.play-btn, .pause-btn {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.play-btn:active, .pause-btn:active {
+    transform: translateY(2px);
+}
