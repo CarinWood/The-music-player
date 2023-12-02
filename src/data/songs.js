@@ -1,55 +1,56 @@
-import image1 from '../assets/images/On_Your_Side_album_cover.jpg'
-import image2 from '../assets/images/Save_Room_John_Legend.jpg'
-import image3 from "../assets/images/John_Legend_-_P.D.A._(We_Just_Don't_Care).jpg"
-import image4 from "../assets/images/Zedd_-_Candyman.png"
-import image5 from "../assets/images/Human_-_Rag'n'Bone_Man_Single.png"
-import image6 from "../assets/images/Imagine_Dragons_-_Shots.png"
+import image1 from '../assets/images/SummertimeSadness.png'
+import image2 from '../assets/images/LanaDelRey-HighByTheBeach.png'
+import image3 from "../assets/images/LanaBlueJeans.png"
+import image4 from "../assets/images/cola.png"
+import image5 from "../assets/images/Lana_Del_Rey_-_West_Coast.png"
+import image6 from "../assets/images/artdeco.png"
+import image7 from "../assets/images/Young_and_Beautiful_cover_art.jpg"
 
 export const songs = [
 {
     id: 1,
-    title: 'Like we used to',
-    artist: 'A Rocket to the Moon',
+    title: 'Summertime Sadness',
+    artist: 'Lana Del Rey',
     img: image1,
 
 },
  {
     id: 2,
-    title: "Save the room",
-    artist: "John Legend",
+    title: "High by the Beach",
+    artist: "Lana Del Rey",
     img: image2,
 
 },
 {
     id: 3,
-    title: "We just don't care",
-    artist: "John Legend",
+    title: "Lana Del Rey",
+    artist: "Blue Jeans",
     img: image3,
 },
 
 {
     id: 4,
-    title: "Dakota",
-    artist: "A Rocket to the moon",
-    img: image1,
+    title: "Cola",
+    artist: "Lana Del Rey",
+    img: image4,
 },
 {
     id: 5,
-    title: "Candyman",
-    artist: "Zedd & Aloe Blacc",
-    img: image4,
+    title: "West Coast",
+    artist: "Lana Del Rey",
+    img: image5,
 }, 
 
 {
     id: 6,
-    title: "Human",
-    artist: "Rag'n'Bone Man",
-    img: image5,
+    title: "Art Deco",
+    artist: "Lana Del Rey",
+    img: image6,
 },
 {
     id: 7,
-    title: "Shots (Broiler Remix)",
-    artist: "Imagine Dragons",
-    img: image6,
+    title: "Young and beautiful",
+    artist: "Lana Del Rey",
+    img: image7,
 } 
 ]
