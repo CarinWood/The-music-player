@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './card.css'
 import { FaCirclePlay } from "react-icons/fa6";
 
-export const Card = ({id, img, title, artist, setPlaySong}) => {
+export const Card = ({id, img, title, artist, setPlaySong, playSong}) => {
   const [songActive, setSongActive] = useState(false)
 
   const clickOnPlay = (id) => {
@@ -11,7 +11,7 @@ export const Card = ({id, img, title, artist, setPlaySong}) => {
   }
 
   return (
-    <div className='card'>
+    <div className={playSong === id ? 'card bg-active': 'card'}>
         <img 
             className='cover-image'
             src={img} 

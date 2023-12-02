@@ -23,12 +23,13 @@ function App() {
                   title={song.title} 
                   artist={song.artist}
                   setPlaySong={setPlaySong}
+                  playSong={playSong}
                 />
       })}
     </div>
     <div className='display'>
         <Screen playSong={playSong}/>
-        <ControlButtons/> 
+        <ControlButtons setPlaySong={setPlaySong} playSong={playSong}/> 
     </div>
     </div>
   );
