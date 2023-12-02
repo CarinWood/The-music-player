@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { Card } from './components/card/Card';
 import { songs } from './data/songs';
+import { Screen } from './components/screen/Screen';
+
+
 
 function App() {
-  const [playSong, setPlaySong] = useState(0)
+  const [playSong, setPlaySong] = useState(1)
 
-  useEffect(() => {
-    console.log(playSong)
-  }, [playSong])
- 
 
   return (
     <div className="app">
@@ -26,7 +25,7 @@ function App() {
       })}
     </div>
     <div className='display'>
-
+            <Screen playSong={playSong}/>
     </div>
     </div>
   );
