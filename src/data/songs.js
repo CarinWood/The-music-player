@@ -35,8 +35,8 @@ export const songs = [
 },
 {
     id: 3,
-    title: "Lana Del Rey",
-    artist: "Blue Jeans",
+    title: "Blue Jeans",
+    artist: "Lana Del Rey",
     img: image3,
     sound: song3,
     active: false
