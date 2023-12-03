@@ -1,14 +1,22 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 import './card.css'
-import { FaCirclePlay } from "react-icons/fa6";
+import { FaCirclePlay, FaCirclePause } from "react-icons/fa6";
 
-export const Card = ({id, img, title, artist, setPlaySong, playSong}) => {
-  const [songActive, setSongActive] = useState(false)
+export const Card = ({id, img, title, artist, sound, setPlaySong, playSong}) => {
 
-  const clickOnPlay = (id) => {
-      setPlaySong(id)
-      
-  }
+    const musicRef = useRef(new Audio(sound));
+
+    const clickOnPlay = (id) => {
+        setPlaySong(id);
+        musicRef.current.play();
+    }
+
+    const clickOnPause = () => {
+        musicRef.current.pause();
+    }
+
+ 
+
 
   return (
     <div className={playSong === id ? 'card bg-active': 'card'}>
@@ -26,6 +34,12 @@ export const Card = ({id, img, title, artist, setPlaySong, playSong}) => {
             className='play'
         >
         <FaCirclePlay/>
+        </div>
+        <div 
+            onClick={()=>clickOnPause()}
+            className='play'
+        >
+        <FaCirclePause/>
         </div>
     
     </div>

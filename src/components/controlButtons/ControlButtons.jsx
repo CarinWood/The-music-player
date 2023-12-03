@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './controlButtons.css'
-import { FaCirclePlay } from "react-icons/fa6";
-import { FaCirclePause } from "react-icons/fa6";
+import { FaCirclePlay, FaCirclePause } from "react-icons/fa6";
 import { IoMdSkipForward, IoMdSkipRewind } from "react-icons/io";
 
 

@@ -11,15 +11,29 @@ export const Screen = ({playSong}) => {
     }
 
     const setImage = () => {
-      return filterSongFunc().img;
+      if(playSong !== null) {
+        return filterSongFunc().img;
+      }else {
+        return 'https://cdn.britannica.com/88/137188-050-8C779D64/Boston-Public-Garden.jpg'
+      }
+   
     }
 
     const setTitle = () => {
-        return filterSongFunc().title;
+        if(playSong !== null) {
+            return filterSongFunc().title;
+        } else {
+            return 'No current title'
+        }
+     
     }
 
     const setArtist = () => {
-        return filterSongFunc().artist
+        if(playSong !== null) {
+            return filterSongFunc().artist
+        } else {
+            return 'no artist'
+        }
     }
   return (
     <>

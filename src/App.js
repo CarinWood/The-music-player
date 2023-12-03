@@ -9,7 +9,7 @@ import { ControlButtons } from './components/controlButtons/ControlButtons';
 
 
 function App() {
-  const [playSong, setPlaySong] = useState(1)
+  const [playSong, setPlaySong] = useState(null)
 
 
   return (
@@ -22,6 +22,7 @@ function App() {
                   img={song.img} 
                   title={song.title} 
                   artist={song.artist}
+                  sound={song.sound}
                   setPlaySong={setPlaySong}
                   playSong={playSong}
                 />

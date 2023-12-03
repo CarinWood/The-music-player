@@ -21,6 +21,7 @@ export const songs = [
     artist: 'Lana Del Rey',
     img: image1,
     sound: song1,
+    active: false
 
 },
  {
@@ -29,6 +30,7 @@ export const songs = [
     artist: "Lana Del Rey",
     img: image2,
     sound: song2,
+    active: false
 
 },
 {
@@ -37,6 +39,7 @@ export const songs = [
     artist: "Blue Jeans",
     img: image3,
     sound: song3,
+    active: false
 },
 
 {
@@ -45,13 +48,15 @@ export const songs = [
     artist: "Lana Del Rey",
     img: image4,
     sound: song4,
+    active: false
 },
 {
     id: 5,
     title: "West Coast",
     artist: "Lana Del Rey",
     img: image5,
-    sound: song5
+    sound: song5,
+    active: false
 }, 
 
 {
@@ -60,12 +65,14 @@ export const songs = [
     artist: "Lana Del Rey",
     img: image6,
     sound: song6,
+    active: false
 },
 {
     id: 7,
     title: "Young and beautiful",
     artist: "Lana Del Rey",
     img: image7,
-    sound: song7
+    sound: song7,
+    active: false
 } 
 ]
