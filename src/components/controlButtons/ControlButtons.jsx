@@ -3,7 +3,7 @@ import './controlButtons.css'
 import { FaCirclePlay } from "react-icons/fa6";
 import { FaCirclePause } from "react-icons/fa6";
 import { IoMdSkipForward, IoMdSkipRewind } from "react-icons/io";
-import { songs } from '../../data/songs';
+
 
 export const ControlButtons = ({setPlaySong, playSong}) => {
     const [pressBtn, setPressBtn] = useState(false);
