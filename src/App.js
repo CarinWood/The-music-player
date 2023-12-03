@@ -6,11 +6,8 @@ import { Screen } from './components/screen/Screen';
 import { ControlButtons } from './components/controlButtons/ControlButtons';
 
 
-
-
 function App() {
   const [playSong, setPlaySong] = useState(null)
-
 
   return (
     <div className="app">
@@ -22,7 +19,6 @@ function App() {
                   img={song.img} 
                   title={song.title} 
                   artist={song.artist}
-                  sound={song.sound}
                   setPlaySong={setPlaySong}
                   playSong={playSong}
                 />
