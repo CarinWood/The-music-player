@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './controlButtons.css'
 import { FaCirclePlay, FaCirclePause } from "react-icons/fa6";
-import { IoMdSkipForward, IoMdSkipRewind } from "react-icons/io";
+import { IoMdSkipForward } from "react-icons/io";
 
 
 export const ControlButtons = ({setPlaySong, playSong}) => {
