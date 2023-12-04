@@ -1,6 +1,10 @@
 # Music player
 ### Made with React.js
+
+Visit project online: https://carinwood-music-player.vercel.app/
+
 <img src="./src/assets/images/screenshot1.png" width="400">
+
 <details>
 <summary>
 Getting Started with Create React App
