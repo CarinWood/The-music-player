@@ -37,3 +37,29 @@
   margin: 2px;
   padding-top: 15px;
 }
+
+
+@media screen and (max-width: 772px) {
+  .app {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .display {
+    order: 1;
+    border-radius: unset;
+    width: 100%;
+    height: 100%;
+    margin: 0px
+  
+  }
+
+  .play-list {
+    order: 2;
+    width: 100%;
+    height: auto;
+    border-radius: unset;
+    margin: 0px;
+    padding: 0px
+  }
+}

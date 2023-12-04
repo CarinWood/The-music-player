@@ -30,6 +30,19 @@
     margin-top: 20px;
 }
 
-.screen-text-artist {
-    
+@media screen and (max-width: 772px) {  
+.screen {
+    width: 150px;
+    height: 150px;
+}
+
+.outer-border {
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+    border: 2px solid rgb(30, 30, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }

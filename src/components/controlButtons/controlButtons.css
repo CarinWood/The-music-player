@@ -30,3 +30,10 @@
 .forward:active, .rewind:active {
     opacity: 0.2;
 }
+
+@media screen and (max-width: 772px) {
+    .control-buttons {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+}

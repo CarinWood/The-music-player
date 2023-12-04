@@ -7,7 +7,7 @@ import { ControlButtons } from './components/controlButtons/ControlButtons';
 
 
 function App() {
-  const [playSong, setPlaySong] = useState(null)
+  const [playSong, setPlaySong] = useState(1)
 
   return (
     <div className="app">
