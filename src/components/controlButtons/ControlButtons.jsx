@@ -4,19 +4,34 @@ import { FaCirclePlay, FaCirclePause } from "react-icons/fa6";
 import { IoMdSkipForward } from "react-icons/io";
 
 
-export const ControlButtons = ({setPlaySong, playSong}) => {
+export const ControlButtons = ({setPlaySong, playSong, songs, currentSong, setCurrentSong, setIsPlaying, isPlaying}) => {
     const [pressBtn, setPressBtn] = useState(false);
 
-    const pressBtnFunc = () => {
+    const pressPlayFunc = () => {
         setPressBtn(!pressBtn)
+        setIsPlaying(true)
+    }
+
+    const pressPauseFunc = () => {
+        setPressBtn(!pressBtn)
+        setIsPlaying(false)
     }
 
     const jumpForward = () => {
+        const index = songs.findIndex(x => x.title === currentSong.title)
+
+
         if(playSong + 1 === 8) {
             setPlaySong(1)
+            setCurrentSong(songs[0]) 
+        
         } else {
             setPlaySong(playSong + 1)
+            setCurrentSong(songs[index +1])
+          
         }
+
+
      
     }
  
@@ -42,21 +57,21 @@ export const ControlButtons = ({setPlaySong, playSong}) => {
         {pressBtn ?
             <div 
                 className='play-btn'
-                onClick={() => pressBtnFunc()}
+                onClick={() => pressPlayFunc()}
             >
                     <FaCirclePlay/>
             </div>
         :
             <div 
                 className='pause-btn'
-                onClick={()=>pressBtnFunc()}
+                onClick={()=>pressPauseFunc()}
             >
                     <FaCirclePause/>
             </div>
         }
         <div 
             className='forward'
-            onClick={() => jumpForward()}
+            onClick={()=>jumpForward()}
         >
             <IoMdSkipForward/>
         </div>
